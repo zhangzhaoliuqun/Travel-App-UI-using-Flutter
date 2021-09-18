@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:travel/models/User.dart';
 
 class TravelSpot {
@@ -7,10 +6,10 @@ class TravelSpot {
   final List<User> users;
 
   TravelSpot({
-    @required this.users,
-    @required this.name,
-    @required this.image,
-    @required this.date,
+    required this.users,
+    required this.name,
+    required this.image,
+    required this.date,
   });
 }
 
