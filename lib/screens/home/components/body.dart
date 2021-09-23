@@ -1,8 +1,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:travel/components/section_title.dart';
+import 'package:travel/screens/home/components/popular_places.dart';
+import 'package:travel/screens/home/components/top_travelers.dart';
 import 'package:travel/size_config.dart';
+
 import 'home_header.dart';
 
 class Body extends StatelessWidget {
@@ -14,10 +16,10 @@ class Body extends StatelessWidget {
         children: [
           HomeHeader(),
           VerticalSpacing(),
-          SectionTitle(
-            press: () {},
-            title: "Right Now At Spark",
-          ),
+          PopularPlaces(),
+          VerticalSpacing(),
+          TopTravelers(),
+          VerticalSpacing(),
         ],
       ),
     );
