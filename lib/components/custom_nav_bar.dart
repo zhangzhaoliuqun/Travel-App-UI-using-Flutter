@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:travel/constants.dart';
 import 'package:travel/screens/events/events_screen.dart';
+import 'package:travel/screens/home/home_screen.dart';
 import 'package:travel/size_config.dart';
 
 class CustomNavBar extends StatelessWidget {
@@ -37,7 +38,14 @@ class CustomNavBar extends StatelessWidget {
                 icon: "assets/icons/chat.svg",
                 title: "Chat",
                 isActive: true,
-                press: () {},
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomeScreen(),
+                    ),
+                  );
+                },
               ),
               NavItem(
                 icon: "assets/icons/friendship.svg",
